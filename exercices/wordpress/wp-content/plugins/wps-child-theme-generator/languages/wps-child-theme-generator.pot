@@ -1,0 +1,305 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: WPS Child Theme Generator\n"
+"POT-Creation-Date: 2018-05-30 10:00+0200\n"
+"PO-Revision-Date: 2018-05-30 10:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: wps-child-theme-generator.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin_page/plugin.php:15
+msgid "Parent Theme"
+msgstr ""
+
+#: admin_page/plugin.php:19
+msgid "Select a template"
+msgstr ""
+
+#: admin_page/plugin.php:27
+msgid "Title"
+msgstr ""
+
+#: admin_page/plugin.php:32
+msgid "Only Alphanumeric is allowed with Spaces"
+msgstr ""
+
+#: admin_page/plugin.php:39
+msgid "Theme URI"
+msgstr ""
+
+#: admin_page/plugin.php:49
+msgid "Author"
+msgstr ""
+
+#: admin_page/plugin.php:57
+msgid "Author URI"
+msgstr ""
+
+#: admin_page/plugin.php:67
+msgid "Screenshot"
+msgstr ""
+
+#: admin_page/plugin.php:76 classes/plugin.php:64
+msgid "Add screenshot"
+msgstr ""
+
+#: admin_page/plugin.php:86
+msgid "Add CSS"
+msgstr ""
+
+#: admin_page/plugin.php:95
+msgid "Send child theme by email"
+msgstr ""
+
+#: admin_page/plugin.php:100
+msgid "Email"
+msgstr ""
+
+#: admin_page/plugin.php:106
+msgid "Add options"
+msgstr ""
+
+#: admin_page/plugin.php:116
+msgid "Images"
+msgstr ""
+
+#: admin_page/plugin.php:118
+msgid "Image sizes"
+msgstr ""
+
+#: admin_page/plugin.php:121
+msgid "List of all registered image sizes from active theme and plugins"
+msgstr ""
+
+#: admin_page/plugin.php:128
+msgid "Uncheck sizes you don't need anymore."
+msgstr ""
+
+#: admin_page/plugin.php:135
+msgid "You can also create new size(s) (used with a previous theme)"
+msgstr ""
+
+#: admin_page/plugin.php:140
+msgid "Add new image size"
+msgstr ""
+
+#: admin_page/plugin.php:144
+msgid "SVG support"
+msgstr ""
+
+#: admin_page/plugin.php:145
+msgid "Add support for SVG inside WordPress Media Uploader."
+msgstr ""
+
+#: admin_page/plugin.php:147
+msgid ""
+"There is a potential security risk with this. Delete this when you think you "
+"will not use it anymore (Learn how to delete this part)."
+msgstr ""
+
+#: admin_page/plugin.php:149
+msgid "Widgets"
+msgstr ""
+
+#: admin_page/plugin.php:151
+msgid "List of default WordPress widgets."
+msgstr ""
+
+#: admin_page/plugin.php:153
+msgid "Uncheck default WordPress Widgets you don't need anymore."
+msgstr ""
+
+#: admin_page/plugin.php:156
+msgid "Accept shortcode in widget"
+msgstr ""
+
+#: admin_page/plugin.php:158
+msgid "Widgets can't use shortcode. Check this box and it will be possible."
+msgstr ""
+
+#: admin_page/plugin.php:161
+msgid "Search results"
+msgstr ""
+
+#: admin_page/plugin.php:163
+msgid "Modify search results URL"
+msgstr ""
+
+#: admin_page/plugin.php:165
+msgid ""
+"Search results URL will be https://ndd.com/search/query instead of https://"
+"ndd.com/?s=query. You maybe need to save your permalink after theme "
+"activation."
+msgstr ""
+
+#: admin_page/plugin.php:168
+msgid "Add post type to search result."
+msgstr ""
+
+#: admin_page/plugin.php:171
+msgid "Administration UI"
+msgstr ""
+
+#: admin_page/plugin.php:173
+msgid "Add column in post and page in admin list table."
+msgstr ""
+
+#: admin_page/plugin.php:175
+msgid "Add thumbnail column"
+msgstr ""
+
+#: admin_page/plugin.php:177 admin_page/plugin.php:186
+msgid "Post"
+msgstr ""
+
+#: admin_page/plugin.php:179 admin_page/plugin.php:188
+msgid "Page"
+msgstr ""
+
+#: admin_page/plugin.php:184
+msgid "Add ID column"
+msgstr ""
+
+#: admin_page/plugin.php:194
+msgid "Supports"
+msgstr ""
+
+#: admin_page/plugin.php:203
+msgid "If you do not know how it works, don't try to manage supports!"
+msgstr ""
+
+#: admin_page/plugin.php:230
+msgid "Create child theme"
+msgstr ""
+
+#: classes/helpers.php:98
+msgid "Failed to create files"
+msgstr ""
+
+#: classes/helpers.php:106
+msgid "Your child theme"
+msgstr ""
+
+#: classes/helpers.php:129
+msgid "Child theme created"
+msgstr ""
+
+#: classes/helpers.php:130
+msgid "Download child theme"
+msgstr ""
+
+#: classes/helpers.php:415 classes/helpers.php:428
+msgid "search"
+msgstr ""
+
+#: classes/lib/wp-dismissible-notices-handler/handler.php:97
+#: classes/review.php:120
+#, php-format
+msgid ""
+"The library can not be used because your version of WordPress is too old. "
+"You need version %s at least."
+msgstr ""
+
+#: classes/lib/wp-dismissible-notices-handler/handler.php:229
+msgid "Dismissible Notices Handler Error:"
+msgstr ""
+
+#: classes/lib/wp-dismissible-notices-handler/handler.php:316
+#, php-format
+msgid "A notice with the ID %s has already been registered."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: classes/plugin.php:29 classes/plugin.php:30
+msgid "WPS Child Theme Generator"
+msgstr ""
+
+#: classes/plugin.php:63
+msgid "Select or upload new file for screenshot"
+msgstr ""
+
+#: classes/plugin.php:65
+msgid "Modify screenshot"
+msgstr ""
+
+#: classes/plugin.php:66
+msgid "Image size name"
+msgstr ""
+
+#: classes/plugin.php:67
+msgid "Image size slug"
+msgstr ""
+
+#: classes/plugin.php:68
+msgid "Width"
+msgstr ""
+
+#: classes/plugin.php:69
+msgid "Height"
+msgstr ""
+
+#: classes/plugin.php:70
+msgid "default px"
+msgstr ""
+
+#: classes/plugin.php:108
+msgid "Tools"
+msgstr ""
+
+#: classes/plugin.php:118
+msgid "Child Theme Generator"
+msgstr ""
+
+#: classes/plugin.php:119
+#, php-format
+msgid ""
+"Don't know where to start with your child theme, use the <a href=\"%s\">WPS "
+"Child Theme Generator</a>."
+msgstr ""
+
+#: classes/review.php:99
+msgid ""
+"Hey! It&#039;s been a little while that you&#039;ve been using this product. "
+"You might not realize it, but user reviews are such a great help to us. We "
+"would be so grateful if you could take a minute to leave a review on "
+"WordPress.org. Many thanks in advance :)"
+msgstr ""
+
+#: classes/review.php:100
+msgid "Click here to leave your review"
+msgstr ""
+
+#: classes/review.php:191
+msgid "WP Review Me Error:"
+msgstr ""
+
+#: classes/review.php:379
+msgid ""
+"Do you like plugin WPS Starter Plugin? <br> Thank you for taking a few "
+"seconds to note us on"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "WPS Child Theme Generator."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WPServeur, NicolasKulka, benoti"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wpserveur.net"
+msgstr ""

@@ -1,0 +1,178 @@
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgba(60, 0, 100, 0.5),rgba(60,0,100,0.5)),url(img/155.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.intro {
+    padding-top: 250px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    line-height: 60px;
+    text-align: right;
+    font-weight: bold;
+    z-index: 1;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding-right: 42px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 32px;
+}
+
+nav ul li a {
+    clear: right;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 70px;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #996AAF;
+}
+
+nav.black {
+    background: #000000;
+}
+
+nav label {
+    color: #fff;
+    font-size: 26px;
+    line-height: 70px;
+    margin: 0 40px 0 0;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 640px) {
+    nav .nav label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block !important;
+        margin: 0;
+    }
+
+    #toggle:checked + .menu{
+        display: block !important;
+    }
+}
+
+.logo {
+    height: 48px;
+    float: left;
+    margin: 20px 48px;
+}
+
+.intro {
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-background {
+    background: url(img/75291.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.about {
+    width: 80%;
+    margin: 0 auto;    
+}
+
+.about h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 300px;
+    color: #996AAF;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    text-align: justify;
+}
+
+.contact {
+    padding-top: 130px;
+    color: white;
+}
+
+.contact h1 {
+    color: #996AAF;
+}
+
+.contact p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: #996AAF;
+}
+
+footer li {
+    display: inline;
+    text-decoration: none;
+}
+
+/* .hometext h1 {
+    font-size: 40pt;
+}
+
+.hometext {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+} */

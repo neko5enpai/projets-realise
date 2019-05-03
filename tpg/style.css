@@ -1,0 +1,56 @@
+body {
+    background-color: #fd5312;
+    max-width: 80%;
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    color: white;
+}
+
+.linenumber {
+    display: inline-block;
+    padding: 5px;
+    width: 2.5em;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffcf3f;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.rechercher {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rechercher input.quelarret {
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.rechercher input.cherche {
+    color: white;
+    border: solid 2px white;
+    background: transparent;
+    border-radius: 50px;
+    height: 30px;
+    margin-left: 10px;
+}

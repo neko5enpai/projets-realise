@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DLCM client:
+        OrganizationalUnits    </title>
+    <link href="https://ui.dlcm.ch/demo/favicon.ico" type="image/x-icon" rel="icon"><link href="https://ui.dlcm.ch/demo/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="include/bootstrap.css"><link rel="stylesheet" href="include/alaxos.css"><link rel="stylesheet" href="include/dlcm.css"><script src="include/jquery-1.js"></script><script src="include/bootstrap.js"></script>
+            <script src="include/alaxos.js"></script></head>
+<body cz-shortcut-listen="true">
+    <div id="container" class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                            <div id="top_unige_logo"><img src="include/dlcm-logo.svg" alt=""></div>                        </div>
+                        <div class="col-md-5 col-sm-4 col-xs-12">
+                            <h1 id="application_title"><a href="https://ui.dlcm.ch/demo/">Data Life Cycle Management</a></h1>                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row"><div class="col-sm-12 text-right small">demo</div></div><div class="text-right hidden-xs" style="overflow:hidden;"></div><div class="hidden-sm hidden-md hidden-lg" style="overflow:hidden;"></div>                            <div class="text-right">
+                            <a href="https://ui.dlcm.ch/demo/users/set-lang?lang=fr">fr</a> <a href="https://ui.dlcm.ch/demo/users/set-lang?lang=de">de</a> <a href="https://ui.dlcm.ch/demo/users/set-lang?lang=en">en</a>                             </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="row"><div class="col-md-12">
+<nav class="navbar navbar-default navbar-flat" role="navigation">
+  <div class="container-fluid">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_links_1552681442">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>
+    <div class="collapse navbar-collapse" id="navbar_links_1552681442">
+
+      <ul class="nav navbar-nav">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/deposits" id="deposits">Deposits</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/sip" id="sip">SIP</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/aip" id="aip">AIP</a>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Access<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/search/search" id="search">Search</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/orders/cart" id="cart">Cart</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/orders/user-history" id="ordersUserHistory">Your orders history</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/orders" id="orders">Orders</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/aip-downloads" id="aip_downloads">Downloaded AIPs</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/dip" id="dip">DIP</a>
+        </li>
+             </ul>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li class="active">
+          <a href="https://ui.dlcm.ch/demo/organizational-units" id="organizational_units">Organizational units</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/people" id="people">People</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/backend-users" id="backend-users">Users</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/roles" id="roles">Roles</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/institutions" id="institutions">Institutions</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/funding-agencies" id="funding_agencies">Funding agencies</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/submission-agreements" id="submission_agreements">Submission agreements</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/oauth2-clients" id="oauth2_clients">OAuth2 clients</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/basic-auth-clients-ingestion" id="basic_auth_clients">BasicAuth clients</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/oai-sets" id="oai_sets">OAI sets</a>
+        </li>
+             </ul>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preservation planning<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/planning/monitor/list-modules" id="monitoring">Monitoring</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/planning/preservation-jobs" id="preservation_jobs">Jobs</a>
+        </li>
+             </ul>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/users" id="admin_users">Users</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/roles" id="admin_roles">Roles</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/log-entries" id="admin_logs">Logs</a>
+        </li>
+             </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/users/configure-connection" id="connection"><span class="glyphicon glyphicon-cloud-upload"></span> Connection</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/logout" id="logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav></div></div>
+        <div id="content" class="row">
+            <div class="col-md-12">
+
+                                
+                <script type="text/javascript">jQuery(document).ready(function(){    Alaxos.start();});</script><div style="height:20px;"></div><a href="https://ui.dlcm.ch/demo/organizational-units/add" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> new organizational unit</a><div class="row">
+  <div class="col-md-10 col-sm-10 col-xs-9">
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group btn-group-sm">
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-2 col-xs-3 text-right">
+<div>Elements: 1 - 6 / 6</div><div>Page: 1 on 1</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+Show <select name="_Tech[pagination_limit]" id="select_pagination_limit"><option value="10" selected="selected">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option></select> elements per page
+<script type="text/javascript">
+$(document).ready(function(){
+   $("#select_pagination_limit").change(function(){
+       window.location = "/demo/organizational-units?" + "&limit=" +$(this).val();
+   });
+});
+</script>
+  </div>
+</div><div class="table-responsive" style="margin-top:20px;"><div style="display:none;"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"></div><table class="table table-striped table-hover table-condensed" cellspacing="0" cellpadding="0"><tbody><tr><th><a class="asc" href="https://ui.dlcm.ch/demo/organizational-units?limit=10&amp;sort=name&amp;direction=desc">Name</a></th><th><a href="https://ui.dlcm.ch/demo/organizational-units?limit=10&amp;sort=openingDate&amp;direction=asc">Opening date</a></th><th><a href="https://ui.dlcm.ch/demo/organizational-units?limit=10&amp;sort=closingDate&amp;direction=asc">Closing date</a></th><th><a href="https://ui.dlcm.ch/demo/organizational-units?limit=10&amp;sort=people&amp;direction=asc">People</a></th><th></th></tr><tr><form method="post" accept-charset="utf-8" class="form-horizontal" role="form" novalidate="novalidate" action="/demo/organizational-units"></form><td><div class="input text"><input type="text" name="Filter[name]" class="form-control" id="filter-name"></div></td><td></td><td></td><td></td><td><button class="btn btn-default" type="submit">Filter</button><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="3eaddc8e1176f1c9ce5f2bdae3e3d387efaa4f4e%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></td></tr><tr class="bg-open-organizational-unit"><td><a href="https://ui.dlcm.ch/demo/organizational-units/view/05f20373-a72d-4160-9ef7-0f78307e1ef0">Bodmer Lab</a></td><td>2018-10-18</td><td></td><td><ul><li><a href="https://ui.dlcm.ch/demo/people/view/06802c29-8778-4f29-b41f-e20713262e9a">De Dios Fuente, Alicia</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/11e8b021-4e56-4e35-a933-3409019e1fcb">Muller, Floriane Sophie</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/4a140cb4-e461-430b-afdb-7806c7318f73">Fürholz, Andreas</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/4b726890-1deb-4b74-bbaf-92119feb5b71">Burgi, Pierre-Yves</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/54cc0a22-aa54-4ec2-8826-82cf9a9c6bbd">Cazeaux, Hugues</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/55877674-0b59-46a9-ad16-40351dc4fdc8">Wilhem, Caroline</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/62cf3945-9ef0-4b85-9855-d0a104b06a27">Mengelle, Thierry</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/64ac6f19-f428-4540-a8d0-255aa9408046">Mostaguir, Khaled</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/697569fd-c3d2-41a7-9428-2f7586ea3525">Echernier, Lydie</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/7a878a3c-ab11-4a6d-8aaf-62c471dad930">Vonlanthen, Mathieu</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/812cc33b-41ad-4b15-8b79-e9e3dcf1144d">Walter, Roland</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/8db0f163-4a47-49ba-b355-92ece252cbfe">Iriarte, Pablo</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/929a485a-3b6e-47dd-8346-375775c5b7dc">Sliusar, Vitalii</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/92e4689c-ad3f-4cc2-836c-236db4ecda70">Jelicic, André</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/ba16e2a5-61d7-4633-9888-e79d7ebd782a">Udry, Stéphane</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/cc7912f8-069b-469b-b103-77288648055a">Rod, Nicolas</a></li></ul></td><td style="width:80px;"><a href="https://ui.dlcm.ch/demo/organizational-units/view/05f20373-a72d-4160-9ef7-0f78307e1ef0" class="to_view"><span class="glyphicon glyphicon-search"></span></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/organizational-units/edit/05f20373-a72d-4160-9ef7-0f78307e1ef0"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;&nbsp;<form name="post_5c8c09e21834d484996095" style="display:none;" method="post" action="/demo/organizational-units/delete/05f20373-a72d-4160-9ef7-0f78307e1ef0"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="a2eb52198b9dcc07ba345ad57d539c3bf11fd00e%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" onclick='if (confirm("Are you sure you want to delete \"Bodmer Lab\" ?")) { document.post_5c8c09e21834d484996095.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-trash"></span></a></td></tr><tr class="bg-open-organizational-unit"><td><a href="https://ui.dlcm.ch/demo/organizational-units/view/a0542038-7e6e-429e-87bc-ff4defe38103">DLCM</a></td><td>2018-10-18</td><td></td><td><ul><li><a href="https://ui.dlcm.ch/demo/people/view/01b5f629-7992-478b-bd43-38553b54251a">Popescu, Alexandru</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/06802c29-8778-4f29-b41f-e20713262e9a">De Dios Fuente, Alicia</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/11e8b021-4e56-4e35-a933-3409019e1fcb">Muller, Floriane Sophie</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/4326cc03-b1dd-4a22-ba8b-e7015bcaa2d5">Jaekel, Martin</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/4a140cb4-e461-430b-afdb-7806c7318f73">Fürholz, Andreas</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/4b726890-1deb-4b74-bbaf-92119feb5b71">Burgi, Pierre-Yves</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/54cc0a22-aa54-4ec2-8826-82cf9a9c6bbd">Cazeaux, Hugues</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/55877674-0b59-46a9-ad16-40351dc4fdc8">Wilhem, Caroline</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/62cf3945-9ef0-4b85-9855-d0a104b06a27">Mengelle, Thierry</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/64ac6f19-f428-4540-a8d0-255aa9408046">Mostaguir, Khaled</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/697569fd-c3d2-41a7-9428-2f7586ea3525">Echernier, Lydie</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/812cc33b-41ad-4b15-8b79-e9e3dcf1144d">Walter, Roland</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/8db0f163-4a47-49ba-b355-92ece252cbfe">Iriarte, Pablo</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/929a485a-3b6e-47dd-8346-375775c5b7dc">Sliusar, Vitalii</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/92e4689c-ad3f-4cc2-836c-236db4ecda70">Jelicic, André</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/ba16e2a5-61d7-4633-9888-e79d7ebd782a">Udry, Stéphane</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/cc7912f8-069b-469b-b103-77288648055a">Rod, Nicolas</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/d1ccdb99-0768-42cd-acbe-e6f16c07ef9a">Lütcke, Henry</a></li></ul></td><td style="width:80px;"><a href="https://ui.dlcm.ch/demo/organizational-units/view/a0542038-7e6e-429e-87bc-ff4defe38103" class="to_view"><span class="glyphicon glyphicon-search"></span></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/organizational-units/edit/a0542038-7e6e-429e-87bc-ff4defe38103"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;&nbsp;<form name="post_5c8c09e21882a762174299" style="display:none;" method="post" action="/demo/organizational-units/delete/a0542038-7e6e-429e-87bc-ff4defe38103"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="a91cd9f4072e708235bbb1abb581b290a24023a2%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" onclick='if (confirm("Are you sure you want to delete \"DLCM\" ?")) { document.post_5c8c09e21882a762174299.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-trash"></span></a></td></tr><tr class="bg-open-organizational-unit"><td><a href="https://ui.dlcm.ch/demo/organizational-units/view/0e16e28b-a30c-4771-9205-992bc9a77d78">Dotphoton</a></td><td>2019-01-09</td><td></td><td><ul><li><a href="https://ui.dlcm.ch/demo/people/view/4b726890-1deb-4b74-bbaf-92119feb5b71">Burgi, Pierre-Yves</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/54cc0a22-aa54-4ec2-8826-82cf9a9c6bbd">Cazeaux, Hugues</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/92e4689c-ad3f-4cc2-836c-236db4ecda70">Jelicic, André</a></li></ul></td><td style="width:80px;"><a href="https://ui.dlcm.ch/demo/organizational-units/view/0e16e28b-a30c-4771-9205-992bc9a77d78" class="to_view"><span class="glyphicon glyphicon-search"></span></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/organizational-units/edit/0e16e28b-a30c-4771-9205-992bc9a77d78"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;&nbsp;<form name="post_5c8c09e218a66371983218" style="display:none;" method="post" action="/demo/organizational-units/delete/0e16e28b-a30c-4771-9205-992bc9a77d78"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="eb4671b2d5e1c1fe1cfd63e9d2821b60fb61d5f9%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" onclick='if (confirm("Are you sure you want to delete \"Dotphoton\" ?")) { document.post_5c8c09e218a66371983218.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-trash"></span></a></td></tr><tr class="bg-open-organizational-unit"><td><a href="https://ui.dlcm.ch/demo/organizational-units/view/e5f4e0c3-7a3e-4089-9a59-f9bb437a614f">NMR Chemistry Lab</a></td><td>2018-10-18</td><td></td><td><ul><li><a href="https://ui.dlcm.ch/demo/people/view/11e8b021-4e56-4e35-a933-3409019e1fcb">Muller, Floriane Sophie</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/4b726890-1deb-4b74-bbaf-92119feb5b71">Burgi, Pierre-Yves</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/54cc0a22-aa54-4ec2-8826-82cf9a9c6bbd">Cazeaux, Hugues</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/62cf3945-9ef0-4b85-9855-d0a104b06a27">Mengelle, Thierry</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/697569fd-c3d2-41a7-9428-2f7586ea3525">Echernier, Lydie</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/7a878a3c-ab11-4a6d-8aaf-62c471dad930">Vonlanthen, Mathieu</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/cc7912f8-069b-469b-b103-77288648055a">Rod, Nicolas</a></li></ul></td><td style="width:80px;"><a href="https://ui.dlcm.ch/demo/organizational-units/view/e5f4e0c3-7a3e-4089-9a59-f9bb437a614f" class="to_view"><span class="glyphicon glyphicon-search"></span></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/organizational-units/edit/e5f4e0c3-7a3e-4089-9a59-f9bb437a614f"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;&nbsp;<form name="post_5c8c09e218d02081941182" style="display:none;" method="post" action="/demo/organizational-units/delete/e5f4e0c3-7a3e-4089-9a59-f9bb437a614f"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="83d6fe42dfccd0ba6838dcb169c2318aa6ce9608%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" onclick='if (confirm("Are you sure you want to delete \"NMR Chemistry Lab\" ?")) { document.post_5c8c09e218d02081941182.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-trash"></span></a></td></tr><tr class="bg-open-organizational-unit"><td><a href="https://ui.dlcm.ch/demo/organizational-units/view/f077bf9d-d62b-42b7-8c6b-048828a8e78b">Optics &amp; Crystal Growth Lab</a></td><td>2018-10-18</td><td></td><td><ul><li><a href="https://ui.dlcm.ch/demo/people/view/4b726890-1deb-4b74-bbaf-92119feb5b71">Burgi, Pierre-Yves</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/54cc0a22-aa54-4ec2-8826-82cf9a9c6bbd">Cazeaux, Hugues</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/62cf3945-9ef0-4b85-9855-d0a104b06a27">Mengelle, Thierry</a></li></ul></td><td style="width:80px;"><a href="https://ui.dlcm.ch/demo/organizational-units/view/f077bf9d-d62b-42b7-8c6b-048828a8e78b" class="to_view"><span class="glyphicon glyphicon-search"></span></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/organizational-units/edit/f077bf9d-d62b-42b7-8c6b-048828a8e78b"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;&nbsp;<form name="post_5c8c09e218f1a416937977" style="display:none;" method="post" action="/demo/organizational-units/delete/f077bf9d-d62b-42b7-8c6b-048828a8e78b"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="76fa2f3edf40f13951bbb97c7923cc5d933fb1e5%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" onclick='if (confirm("Are you sure you want to delete \"Optics &amp; Crystal Growth Lab\" ?")) { document.post_5c8c09e218f1a416937977.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-trash"></span></a></td></tr><tr class="bg-open-organizational-unit"><td><a href="https://ui.dlcm.ch/demo/organizational-units/view/fd287375-4833-4666-9a4f-3d739c35de08">Predictive Ecology Lab</a></td><td>2018-12-04</td><td></td><td><ul><li><a href="https://ui.dlcm.ch/demo/people/view/54cc0a22-aa54-4ec2-8826-82cf9a9c6bbd">Cazeaux, Hugues</a></li><li><a href="https://ui.dlcm.ch/demo/people/view/94d78d9b-9fa0-4df1-a1ce-18d18b6b5a1a">Krug, Rainer</a></li></ul></td><td style="width:80px;"><a href="https://ui.dlcm.ch/demo/organizational-units/view/fd287375-4833-4666-9a4f-3d739c35de08" class="to_view"><span class="glyphicon glyphicon-search"></span></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/organizational-units/edit/fd287375-4833-4666-9a4f-3d739c35de08"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;&nbsp;<form name="post_5c8c09e219102303215627" style="display:none;" method="post" action="/demo/organizational-units/delete/fd287375-4833-4666-9a4f-3d739c35de08"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="e3b01e0aaa158be136a9592bb453c228072a171d%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" onclick='if (confirm("Are you sure you want to delete \"Predictive Ecology Lab\" ?")) { document.post_5c8c09e219102303215627.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-trash"></span></a></td></tr></tbody></table></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <footer id="footer">
+
+                    <div class="row">
+
+                        <div class="col-md-12 text-right"></div>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body></html>

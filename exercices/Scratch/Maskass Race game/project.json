@@ -1,0 +1,209 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 6,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "track",
+			"baseLayerID": 7,
+			"baseLayerMD5": "4588d5d6560068fc7d4204c911cdc8d5.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 239,
+			"rotationCenterY": 179
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Lutin2",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 1,
+					"baseLayerMD5": "1bcd7ae545cf25843f26826b02ce2a93.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 470,
+					"rotationCenterY": 8
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -1,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lutin1",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Séparateur",
+					"baseLayerID": 2,
+					"baseLayerMD5": "295c67090824f7b14d9952cb1c5dcfc9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 44,
+					"rotationCenterY": 273
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 176,
+			"scratchY": -29,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lutin3",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 3,
+					"baseLayerMD5": "5a6dbbf8ca27f606f4efdecfd80e74bb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 141,
+					"rotationCenterY": 209
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 255,
+			"scratchY": -17,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lutin5",
+			"scripts": [[65, 32, [["whenGreenFlag"], ["gotoX:y:", -144, 79]]],
+				[65,
+					173,
+					[["whenKeyPressed", "right arrow"],
+						["forward:", 10],
+						["doIf",
+							["touching:", "Lutin3"],
+							[["broadcast:", "message1"], ["say:duration:elapsed:from:", "Whewo whewheewoo !", 2], ["playSound:", "Whewowhewheewo"]]]]],
+				[143, 351, [["whenIReceive", "Message 2"], ["stopScripts", "other scripts in sprite"]]]],
+			"sounds": [{
+					"soundName": "Whewowhewheewo",
+					"soundID": 1,
+					"md5": "afb758bf6a447b8684e2bf4b347b3247.wav",
+					"sampleCount": 37888,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Maskass bleu",
+					"baseLayerID": 4,
+					"baseLayerMD5": "76726f3f4f20e1d2b5128319d6af4068.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 123
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 256,
+			"scratchY": 79,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lutin4",
+			"scripts": [[53, 32, [["whenGreenFlag"], ["gotoX:y:", -145, -32]]],
+				[109,
+					142,
+					[["whenKeyPressed", "space"],
+						["forward:", 10],
+						["doIf",
+							["touching:", "Lutin3"],
+							[["broadcast:", "Message 2"], ["say:duration:elapsed:from:", "WHEOH!! MOOMOO WINS!", 2], ["playSound:", "Moomoo wins"]]]]],
+				[117, 378, [["whenIReceive", "message1"], ["stopScripts", "other scripts in sprite"]]]],
+			"sounds": [{
+					"soundName": "Moomoo wins",
+					"soundID": 2,
+					"md5": "20f5d342b7ee5c44c045106bb19a37e9.wav",
+					"sampleCount": 50816,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Maskass",
+					"baseLayerID": 5,
+					"baseLayerMD5": "5167167f97b3117d707e9cf10a6a9be7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 201,
+					"rotationCenterY": 139
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 245,
+			"scratchY": -32,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "LNX 32,0,0,101",
+		"videoOn": false,
+		"scriptCount": 6,
+		"spriteCount": 5,
+		"swfVersion": "v461.2",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/70.0.3538.110 Safari\/537.36"
+	}
+}

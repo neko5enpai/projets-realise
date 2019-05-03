@@ -1,0 +1,21 @@
+Nom: Virginie Monod
+Date: 08 Novembre 2018
+Projet: Tic Tac Toe
+
+
+// Liens vers les Wireframes (Maquettes)
+
+-- PAGE D'ACCUEIL MORPION --
+https://wireframe.cc/EDFSgQ
+
+-- PAGE DU MORPION --
+https://wireframe.cc/Gn6HMH
+
+-- PAGE DE RESULTATS --
+https://wireframe.cc/pT0rWp
+
+"En tant que joueur, j'aimerais pouvoir accéder à un écran d'accueil, dans lequel je pourrais entrer le nom de la partie ainsi que le pseudo des joueurs avant de commencer à jouer."
+
+"Sur la page du Morpion, il doit y avoir le nom du jeu qui s'affiche au dessus de la grille de jeu avec le nom des joueurs sur le côté. Les joueurs pourront cliquer sur les cases vides avec leur symbole attitré. Les cases déjà occupées par un symbole ne seront plus cliquables."
+
+"Lorsqu'un joueur aligne 3 symboles, il doit être redirigé vers une page de résultats avec le nom du gagnant et la possibilité de refaire une partie."

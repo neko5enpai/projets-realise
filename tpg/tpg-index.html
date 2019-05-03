@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+    <title>TPG</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Transports Publics Genevois - Horaires</h1>
+
+
+
+        <div class="rechercher">
+            <input type="text" class="quelarret" placeholder="Entrer nom de l'arret">
+            <input type="button" value="Va chercher" class="cherche">
+        </div>
+        <h2>Prochains départs:</h2>
+
+        <ul>
+            <li>Ligne <span class="linenumber">12</span> Direction Bachet de Pesay - arrive dans 1 minute. <i
+                    class="fas fa-bus"></i></li>
+        </ul>
+        <div id="demo">
+        </div>
+    </div>
+
+    <script>
+        let xhttp = document.createElement("p");
+        let data = document.createTextNode("This is new.");
+        xhttp.appendChild(data);
+
+        let element = document.getElementById("div1");
+        element.appendChild(xhttp);
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

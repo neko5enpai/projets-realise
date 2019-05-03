@@ -1,0 +1,30 @@
+{
+    stops:{
+     timestamp:”YYYY-MM-DDThh:mm:ssTZD”,
+     stops:[
+     {
+     stopCode: ”CVIN”,
+     stopName:”Gare Cornavin”,
+     distance:103
+     connections:[
+     {
+     lineCode:1,
+     destinationName:”Petit-Bel-Air”,
+     destinationCode:”PETIT-BEL-AIR”
+     },
+     {
+     lineCode:1,
+     destinationName:”Jar.-Botanique”,
+     destinationCode:”JAR. BOTANIQUE”
+     },
+     ...
+     ]
+    },
+     ...
+    ]
+} 
+
+{ stops:{
+    timestamp:”YYYY-MM-DDThh:mm:ssTZD”,
+     }
+} 

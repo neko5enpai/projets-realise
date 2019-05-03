@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DLCM client:
+        Deposits    </title>
+    <link href="https://ui.dlcm.ch/demo/favicon.ico" type="image/x-icon" rel="icon"><link href="https://ui.dlcm.ch/demo/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="include/bootstrap.css"><link rel="stylesheet" href="include/alaxos.css"><link rel="stylesheet" href="include/dlcm.css"><script src="include/jquery-1.js"></script><script src="include/bootstrap.js"></script>
+        <link rel="stylesheet" href="include/default.css">    <script src="include/alaxos.js"></script><script src="include/jquery.js"></script><script src="include/jquery_002.js"></script><script src="include/jquery_003.js"></script><script src="include/chunked.js"></script></head>
+<body cz-shortcut-listen="true">
+    <div id="container" class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                            <div id="top_unige_logo"><img src="include/dlcm-logo.svg" alt=""></div>                        </div>
+                        <div class="col-md-5 col-sm-4 col-xs-12">
+                            <h1 id="application_title"><a href="https://ui.dlcm.ch/demo/">Data Life Cycle Management</a></h1>                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row"><div class="col-sm-12 text-right small">demo</div></div><div class="text-right hidden-xs" style="overflow:hidden;"></div><div class="hidden-sm hidden-md hidden-lg" style="overflow:hidden;"></div>                            <div class="text-right">
+                            <a href="https://ui.dlcm.ch/demo/users/set-lang?lang=fr">fr</a> <a href="https://ui.dlcm.ch/demo/users/set-lang?lang=de">de</a> <a href="https://ui.dlcm.ch/demo/users/set-lang?lang=en">en</a>                             </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="row"><div class="col-md-12">
+<nav class="navbar navbar-default navbar-flat" role="navigation">
+  <div class="container-fluid">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_links_1552681369">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>
+    <div class="collapse navbar-collapse" id="navbar_links_1552681369">
+
+      <ul class="nav navbar-nav">
+
+        <li class="active">
+          <a href="https://ui.dlcm.ch/demo/deposits" id="deposits">Deposits</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/sip" id="sip">SIP</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/aip" id="aip">AIP</a>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Access<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/search/search" id="search">Search</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/orders/cart" id="cart">Cart</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/orders/user-history" id="ordersUserHistory">Your orders history</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/orders" id="orders">Orders</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/aip-downloads" id="aip_downloads">Downloaded AIPs</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/dip" id="dip">DIP</a>
+        </li>
+             </ul>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/organizational-units" id="organizational_units">Organizational units</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/people" id="people">People</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/backend-users" id="backend-users">Users</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/roles" id="roles">Roles</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/institutions" id="institutions">Institutions</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/funding-agencies" id="funding_agencies">Funding agencies</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/submission-agreements" id="submission_agreements">Submission agreements</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/oauth2-clients" id="oauth2_clients">OAuth2 clients</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/basic-auth-clients-ingestion" id="basic_auth_clients">BasicAuth clients</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/oai-sets" id="oai_sets">OAI sets</a>
+        </li>
+             </ul>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preservation planning<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/planning/monitor/list-modules" id="monitoring">Monitoring</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/planning/preservation-jobs" id="preservation_jobs">Jobs</a>
+        </li>
+             </ul>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/users" id="admin_users">Users</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/roles" id="admin_roles">Roles</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/log-entries" id="admin_logs">Logs</a>
+        </li>
+             </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/users/configure-connection" id="connection"><span class="glyphicon glyphicon-cloud-upload"></span> Connection</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/logout" id="logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav></div></div>
+        <div id="content" class="row">
+            <div class="col-md-12">
+
+                                
+                <script src="include/jstree.js"></script><link rel="stylesheet" href="include/style.css"><script src="include/datalist.js"></script><div class="row" style="margin-bottom:10px;"><div class="col-md-4 col-md-offset-8">Filter by organizational unit : <div class="input select"><select name="organizationalUnitFilter" id="organizationalUnitFilter" class="form-control"><option value="05f20373-a72d-4160-9ef7-0f78307e1ef0">Bodmer Lab</option><option value="0e16e28b-a30c-4771-9205-992bc9a77d78">Dotphoton</option><option value="a0542038-7e6e-429e-87bc-ff4defe38103">DLCM</option><option value="e5f4e0c3-7a3e-4089-9a59-f9bb437a614f" selected="selected">NMR Chemistry Lab</option><option value="f077bf9d-d62b-42b7-8c6b-048828a8e78b">Optics &amp; Crystal Growth Lab</option><option value="fd287375-4833-4666-9a4f-3d739c35de08">Predictive Ecology Lab</option></select></div></div></div>
+<script type="text/javascript">
+$(document).ready(function() {
+    registerOrganizationalUnitFilterChange();
+});
+
+function registerOrganizationalUnitFilterChange() {
+    $("#organizationalUnitFilter").change(function(){
+        window.location = "/demo/deposits?tab=&status=IN_PROGRESS&unitFilter=" + $(this).val();
+    });
+}
+
+</script>
+
+<ul class="nav nav-tabs"><li role="presentation" class="active"><a href="https://ui.dlcm.ch/demo/deposits?status=IN_PROGRESS"><span id="total-ongoing-deposits" class="badge badge-outline">3</span> Ongoing deposits</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=IN_VALIDATION"><span id="total-awaiting-deposits" style="color: rgb(204, 204, 204);"></span> Deposits awaiting validation</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=APPROVED"><span id="total-approved-deposits" style="color: rgb(204, 204, 204);"></span> Approved deposits</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=COMPLETED"><span id="total-completed-deposits" style="color: rgb(204, 204, 204);"></span> Completed deposits</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=REJECTED"><span id="total-rejected-deposits" style="color: rgb(204, 204, 204);"></span> Rejected deposits</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=IN_ERROR"><span id="total-error-deposits" style="color: rgb(204, 204, 204);"></span> Deposits in error</a></li></ul><div style="height:20px;"></div>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    setTotalDeposits("IN_PROGRESS");
+    setTotalDeposits("IN_VALIDATION");
+    setTotalDeposits("APPROVED");
+    setTotalDeposits("COMPLETED");
+    setTotalDeposits("REJECTED");
+    setTotalDeposits("IN_ERROR");
+
+    registerOrganizationalUnitFilterChange();
+});
+
+function setTotalDeposits(status)
+{
+    var total_zone = null;
+
+    switch (status) {
+        case "IN_PROGRESS":
+            total_zone = "#total-ongoing-deposits";
+            break;
+
+        case "IN_VALIDATION":
+            total_zone = "#total-awaiting-deposits";
+            break;
+
+        case "APPROVED":
+            total_zone = "#total-approved-deposits";
+            break;
+
+        case "COMPLETED":
+            total_zone = "#total-completed-deposits";
+            break;
+
+        case "REJECTED":
+            total_zone = "#total-rejected-deposits";
+            break;
+
+        case "IN_ERROR":
+            total_zone = "#total-error-deposits";
+            break;
+    }
+
+    var url = "https://ui.dlcm.ch/demo/deposits/get-total-deposits/status.json".replace("status", status);
+
+    var organizationalUnitFilterValue = $("#organizationalUnitFilter").val();
+    if (organizationalUnitFilterValue != null && organizationalUnitFilterValue != "") {
+        url += "?unitFilter=" + organizationalUnitFilterValue;
+    }
+
+    $.getJSON(url, function( data ) {
+        if (data.total > 0) {
+            $(total_zone).addClass("badge");
+            $(total_zone).addClass("badge-outline");
+            $(total_zone).html(data.total);
+        } else {
+            $(total_zone).css("color", "#ccc");
+            $(total_zone).html("");
+        }
+    });
+}
+
+</script>
+<div style="height:20px;"></div><div class="row"><div class="col-sm-6"><div class="btn-toolbar"><div class="btn-group btn-group-sm"><a href="https://ui.dlcm.ch/demo/deposits/edit/42c29eb8-1911-4ff5-b7ab-404b6220ea38" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Edit</a></div><div class="btn-group btn-group-sm"><form name="post_5c8c09999e048275410666" style="display:none;" method="post" action="/demo/deposits/update-status/42c29eb8-1911-4ff5-b7ab-404b6220ea38?deposit_status=IN_VALIDATION"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="1d2a5e46a8c01dc6366ea2b72e8e56c5446d19af%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" class="btn btn-default" onclick='if (confirm("Do you really want to send this deposit to validation ?")) { document.post_5c8c09999e048275410666.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-check"></span> Send to validation</a></div></div></div><div class="col-sm-6 text-right"><div class="btn-group btn-group-sm"><form name="post_5c8c09999e1b6011580104" style="display:none;" method="post" action="/demo/deposits/reserve-doi/42c29eb8-1911-4ff5-b7ab-404b6220ea38?deposit_status=IN_VALIDATION"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="ac0cc7f0fc94d00bf0aee354a2be28876e87fd62%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" class="btn btn-default" onclick='if (confirm("Do you really want to reserve a DOI for this deposit ?")) { document.post_5c8c09999e1b6011580104.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-barcode"></span> Reserve a DOI</a></div></div></div><div style="height:20px;"></div><h3>[Organic Compound] Menthol</h3><ul class="nav nav-tabs" style="margin:20px 0px;"><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits/view/42c29eb8-1911-4ff5-b7ab-404b6220ea38">Metadata</a></li><li role="presentation" class="active"><a href="https://ui.dlcm.ch/demo/deposits/files/42c29eb8-1911-4ff5-b7ab-404b6220ea38"><span class="badge badge-outline" id="data_total_badge">332</span> Files</a></li></ul><div style="height:20px;"></div>
+<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#fileUploadModal">
+    <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+    Add files</button>
+
+<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#fileUploadModal" data-data-category="Primary">
+    <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+    Add primary data</button>
+
+<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#fileUploadModal" data-data-category="Secondary">
+    <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+    Add secondary data</button>
+
+<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#fileUploadModal" data-data-category="Package" data-data-type="Metadata">
+    <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+    Add metadata</button>
+
+<div class="modal fade" id="fileUploadModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title">Files upload</h4>
+      </div>
+      <div class="modal-body">
+
+        <div id="uploadFormZone"><form method="post" accept-charset="utf-8" class="form-horizontal" role="form" id="uploadForm" novalidate="novalidate" action="/demo/deposits/files/42c29eb8-1911-4ff5-b7ab-404b6220ea38"><div style="display:none;"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"></div><input type="hidden" name="resId"><div class="form-group"><label class="col-sm-4 control-label" for="uploadrelativelocation">Subdirectory</label><div class="col-sm-8"><div class="input text"><input type="text" name="uploadRelativeLocation" class="form-control" id="uploadrelativelocation"></div></div></div><div class="form-group"><label class="col-sm-4 control-label" for="uploaddatacategory">Data category</label><div class="col-sm-5"><select name="uploadDataCategory" class="form-control"><option value="" selected="selected"></option><option value="Primary">Primary</option><option value="Secondary">Secondary</option><option value="Package">Package</option><option value="Software">Software</option></select><p class="form-control-static" id="uploadDataCategoryLabel" style="display:none;"></p></div></div><div class="form-group"><label class="col-sm-4 control-label" for="uploaddatatype">Data type</label><div class="col-sm-5"><select name="uploadDataType" class="form-control"><option value="" selected="selected"></option></select></div><div class="col-sm-1"><img src="include/small-ajax-loader.gif" id="uploadDataTypesLoader" style="display:none;" alt=""></div></div><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="9dd1a83f7544ab4f8432d703fb6442969b9cdf44%3AresId"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><hr></div><div id="datafiles_upload">
+
+    <span class="btn btn-default fileinput-button">
+        <span><span class="glyphicon glyphicon-plus"></span> Add files to selection</span>
+        <input type="file" name="files[]" data-url="/demo/deposits/upload-file/42c29eb8-1911-4ff5-b7ab-404b6220ea38" multiple="">
+    </span>
+
+    <div class="progress-bar-zone" style="display:none;">
+
+        <div class="progress">
+            <div class="progress-bar bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width:2em;">
+                <span class="percent">0%</span>
+            </div>
+        </div>
+        <div style="margin:-15px 0 10px 0;">
+            <span class="size"></span>
+        </div>
+    </div>
+
+    <div id="datafiles_upload_notification" style="display:none;padding:5px;">
+    </div>
+
+</div>
+<script>$(document).ready(function(){
+    
+    var options = {
+        "input_button_selector" : "#datafiles_upload input[type=file]",
+        "maxChunkSize"          : 10485760,
+        "sequentialUploads"     : true,
+        "dataType"              : "json",
+        "progress_bar_selector" : "#datafiles_upload .progress",
+        "display_progress"      : true
+    }
+    
+    options["add"] = function(e, data){
+        
+        if(typeof(data.headers) == "undefined"){
+            data.headers = {}
+        }
+        
+        data.headers["X-Upload-id"] = ChunkedFileUpload.generate_upload_id();
+        data.headers["X-CSRF-Token"] = "ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f";
+        
+        ChunkedFileUpload.resetProgressBar("#datafiles_upload .progress", "#datafiles_upload .size")
+        ChunkedFileUpload.showProgressBar("#datafiles_upload .progress-bar-zone");
+        ChunkedFileUpload.hideNotification("#datafiles_upload_notification");
+        
+        var selected_filenames = [];
+        $("#datafiles_upload_files_list").find("div.filename").each(function(index, data){
+            selected_filenames.push($(this).html());
+        });
+        
+        $.each(data.files, function (index, file) {
+            
+            if ($.inArray(file.name, selected_filenames) == -1) {
+                
+                $("#upload_datafiles_btn").on("click", function () {
+                   if(data.files.length > 0) {
+                       data.submit();
+                   }
+                });
+                
+                var file_row = "<div class=\"row file-item\">";
+                file_row += "<div class=\"col-md-10 filename\">";
+                file_row += file.name;
+                file_row += "</div>";
+                file_row += "<div class=\"col-md-2\">";
+                file_row += "<span class=\"delete-file-item-btn\">X</span>";
+                file_row += "</div>";
+                file_row += "</div>";
+                
+                file_row = $(file_row);
+                
+                $("#datafiles_upload_files_list").append(file_row);
+                
+                file_row.find(".delete-file-item-btn").click(function(){
+                    data.files.length = 0;
+                    file_row.remove();
+                });
+                
+                data.context = file_row;
+                
+            } else {
+                return false;
+            }
+            
+        });
+    };
+
+    options["progressall"] = function(e, data){
+        
+        ChunkedFileUpload.setBarData(data, "#datafiles_upload .progress", "#datafiles_upload .size");
+        
+        if(data.loaded == data.total)
+        {
+            $("#datafiles_upload .progress-bar-zone").fadeOut(200, function(){
+                ChunkedFileUpload.showSuccessMessage("#datafiles_upload_notification", "#datafiles_upload .progress-bar-zone", "Upload successful");
+            });
+        }
+    };
+
+    options["done"] = function(e, data){
+                    $("#datafiles_upload input[type=file]").prop("disabled", true);
+                    $("#upload_datafiles_btn").prop("disabled", true);
+                    $(data.context).hide("slow", function(){ $(data.context).remove(); });
+                }
+
+    options["fail"] = function(e, data){
+                    Alaxos.manage_ajax_error(data.jqXHR.responseJSON, "#upload_error");
+                    setTimeout(function(){
+                        $("#datafiles_upload_notification").hide();
+                    }, 200);
+                }
+
+
+    options["submit"] = function(e, data){
+                    data.formData = $("#uploadForm").serializeArray();
+                }
+
+    ChunkedFileUpload.initialize(options);
+});</script><div id="upload_error"></div><div id="datafiles_upload_notification"></div><div id="datafiles_upload_files_list"></div>
+        <!--
+        <button id="upload_datafiles_btn" class="btn btn-default">envoyer</button>
+        -->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="upload_datafiles_btn">Upload files</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $('#fileUploadModal').on('show.bs.modal', function (event) {
+        var button       = $(event.relatedTarget);
+        var dataCategory = button.data('data-category');
+        var dataType     = button.data('data-type');
+        var modalTitle   = "Files upload";
+
+        if (dataCategory != null) {
+            $("select[name=uploadDataCategory]").val(dataCategory);
+            $("select[name=uploadDataCategory]").hide();
+            $("#uploadDataCategoryLabel").html(dataCategory).show();
+            fill_upload_datatype_options(dataCategory, dataType);
+
+            if (dataCategory == "Primary") {
+                modalTitle = "Primary data upload";
+            } else if (dataCategory == "Secondary") {
+                modalTitle = "Secondary data upload";
+            } else if (dataCategory == "Package") {
+                modalTitle = "Metadata upload";
+                $("#uploadFormZone").hide();
+            }
+        }
+
+        var modal = $(this);
+        modal.find('.modal-title').text(modalTitle);
+
+        $("#datafiles_upload input[type=file]").removeProp("disabled");
+        $("#upload_datafiles_btn").removeProp("disabled");
+    });
+
+    $('#fileUploadModal').on('hidden.bs.modal', function (e) {
+        clearFilesUploadModal();
+        Datalist.load_data_list("42c29eb8-1911-4ff5-b7ab-404b6220ea38");
+    });
+
+    $("select[name=uploadDataCategory]").change(function() {
+        fill_upload_datatype_options($(this).val());
+    });
+});
+
+function clearFilesUploadModal()
+{
+    ChunkedFileUpload.hideNotification("#datafiles_upload_notification");
+    $("#datafiles_upload_files_list").html("");
+    $("#upload_datafiles_btn").off("click");
+    $("input[name=uploadRelativeLocation]").val("");
+    $("select[name=uploadDataCategory] option:selected").prop("selected", false);
+    $("select[name=uploadDataType]").html("");
+    $("select[name=uploadDataCategory]").show();
+    $("#uploadFormZone").show();
+    $("#uploadDataCategoryLabel").html("").hide();
+}
+
+function fill_upload_datatype_options(dataCategory, preselectedType)
+{
+    $.ajax({
+        url : "/demo/deposit-data/get-data-types-list/42c29eb8-1911-4ff5-b7ab-404b6220ea38?dataCategory=" + dataCategory,
+        type : "get",
+        dataType: "json",
+        beforeSend: function () {
+            $("#uploadDataTypesLoader").show();
+        }
+    })
+    .done(function( data, textStatus, jqXHR ) {
+
+        var options = "";
+        $.each(data, function(key, value){
+            options += '<option value=' + key + '>' + value + '</option>';
+        });
+        $("select[name=uploadDataType]").html(options);
+
+        if (typeof(preselectedType) != "undefined" && preselectedType != null) {
+            $("select[name=uploadDataType]").val(preselectedType);
+        }
+    })
+    .fail(function( jqXHR, textStatus, errorThrown ) {
+        $("select[name=uploadDataType]").html("");
+        alert("Unable to fetch data types");
+    })
+    .always(function(jqXHR, textStatus, errorThrown ) {
+        $("#uploadDataTypesLoader").hide();
+    });
+}
+</script>
+
+<div class="row" style="margin:10px 0px 10px 0px;"><div class="col-md-3"><div id="files_visualization"><a href="#" id="folders-view-link" style="">folders view</a><a href="#" id="flat-view-link" style="display:none;">flat view</a></div></div><div class="col-md-7 text-right"><span id="data_total" style="display:inline-block;padding-top:10px;font-style:italic;">332 elements</span></div><div class="col-md-1"><select name="files_pagination" id="files_pagination" class="form-control"><option value="5">5</option><option value="10" selected="selected">10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option></select></div></div><input type="hidden" name="csrfToken" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div class="row"><div class="col-md-2" id="folders_column" style="display:none;"><div id="data_structure"><img src="include/small-ajax-loader.gif" alt=""> loading...</div></div><div class="col-md-12" id="files_column" style=""><div id="data_list"><div class="files-list"><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal0" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/006ac316-d60d-4061-ba65-204d0766f156" target="_blank">outd (532.0 B)</a></div><div class="col-md-3">15.03.2019, 19:50 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal0" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="006ac316-d60d-4061-ba65-204d0766f156" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="006ac316-d60d-4061-ba65-204d0766f156" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-006ac316-d60d-4061-ba65-204d0766f156" style="display:none"></div></div><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal1" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/00958a1e-b8ef-4d5e-a9ec-9d2d9ae23570" target="_blank">title (59.0 B)</a></div><div class="col-md-3">15.03.2019, 19:52 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal1" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="00958a1e-b8ef-4d5e-a9ec-9d2d9ae23570" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="00958a1e-b8ef-4d5e-a9ec-9d2d9ae23570" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-00958a1e-b8ef-4d5e-a9ec-9d2d9ae23570" style="display:none"></div></div><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal2" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/00bedcf5-2ad9-4f46-94c7-49a91366a519" target="_blank">proc2s (2.0 KB)</a></div><div class="col-md-3">15.03.2019, 19:52 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal2" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="00bedcf5-2ad9-4f46-94c7-49a91366a519" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="00bedcf5-2ad9-4f46-94c7-49a91366a519" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-00bedcf5-2ad9-4f46-94c7-49a91366a519" style="display:none"></div></div><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal3" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/01cae417-5f94-4329-9809-68aae7014f8b" target="_blank">scon2 (622.0 B)</a></div><div class="col-md-3">15.03.2019, 19:50 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal3" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="01cae417-5f94-4329-9809-68aae7014f8b" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="01cae417-5f94-4329-9809-68aae7014f8b" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-01cae417-5f94-4329-9809-68aae7014f8b" style="display:none"></div></div><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal4" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/025b8bde-e7f6-42ec-ac34-30560cbfa7c7" target="_blank">gpnam3 (1.7 KB)</a></div><div class="col-md-3">15.03.2019, 19:51 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal4" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="025b8bde-e7f6-42ec-ac34-30560cbfa7c7" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="025b8bde-e7f6-42ec-ac34-30560cbfa7c7" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-025b8bde-e7f6-42ec-ac34-30560cbfa7c7" style="display:none"></div></div><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal5" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/02633611-1ec6-4e82-800b-97939f59a7bd" target="_blank">clevels (1.1 KB)</a></div><div class="col-md-3">15.03.2019, 19:52 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal5" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="02633611-1ec6-4e82-800b-97939f59a7bd" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="02633611-1ec6-4e82-800b-97939f59a7bd" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-02633611-1ec6-4e82-800b-97939f59a7bd" style="display:none"></div></div><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal6" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/036eb41b-2a58-483d-ad4f-32302a112f0b" target="_blank">precom.output (3.9 KB)</a></div><div class="col-md-3">15.03.2019, 19:51 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal6" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="036eb41b-2a58-483d-ad4f-32302a112f0b" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="036eb41b-2a58-483d-ad4f-32302a112f0b" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-036eb41b-2a58-483d-ad4f-32302a112f0b" style="display:none"></div></div><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal7" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/03733728-8eb8-43fd-b71f-29e26e1948f3" target="_blank">peakrng (174.0 B)</a></div><div class="col-md-3">15.03.2019, 19:51 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal7" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="03733728-8eb8-43fd-b71f-29e26e1948f3" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="03733728-8eb8-43fd-b71f-29e26e1948f3" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-03733728-8eb8-43fd-b71f-29e26e1948f3" style="display:none"></div></div><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal8" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/0609653a-5833-4fe4-b647-13c52bb9eccd" target="_blank">format.temp (7.5 KB)</a></div><div class="col-md-3">15.03.2019, 19:49 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal8" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="0609653a-5833-4fe4-b647-13c52bb9eccd" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="0609653a-5833-4fe4-b647-13c52bb9eccd" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-0609653a-5833-4fe4-b647-13c52bb9eccd" style="display:none"></div></div><div class="row"><div class="col-md-4"><a class="glyphicon glyphicon-info-sign" href="#" data-toggle="modal" data-target="#fileInfosModal9" alt="file infos" title="file infos"></a>&nbsp;&nbsp;<a href="https://ui.dlcm.ch/demo/deposit-data/download/42c29eb8-1911-4ff5-b7ab-404b6220ea38/06a42839-d7eb-45ee-a69a-5e76c9c58d16" target="_blank">gpnam1 (1.7 KB)</a></div><div class="col-md-3">15.03.2019, 19:50 <a class="glyphicon glyphicon-calendar show-datafile-history" href="#" data-toggle="modal" data-target="#historyModal9" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38" data-datafile-id="06a42839-d7eb-45ee-a69a-5e76c9c58d16" alt="history" title="history"></a></div><div class="col-md-2">READY</div><div class="col-md-2"><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div></div><div class="col-md-1"><a class="glyphicon glyphicon-trash delete-datafile" href="#" data-datafile-id="06a42839-d7eb-45ee-a69a-5e76c9c58d16" data-deposit-id="42c29eb8-1911-4ff5-b7ab-404b6220ea38"></a><img src="include/small-ajax-loader.gif" id="datafile-small-loader-06a42839-d7eb-45ee-a69a-5e76c9c58d16" style="display:none"></div></div></div><div class="text-center"><nav aria-label="Page navigation"><ul class="pagination">  <li class="disabled">    <a href="#" aria-label="Previous">      <span aria-hidden="true">«</span>    </a>  </li><li class="active"><a href="#" class="page-link" data-page="1">1</a></li><li><a href="#" class="page-link" data-page="2">2</a></li><li><a href="#" class="page-link" data-page="3">3</a></li><li><a href="#">...</a></li><li><a href="#" class="page-link" data-page="32">32</a></li><li><a href="#" class="page-link" data-page="33">33</a></li><li><a href="#" class="page-link" data-page="34">34</a></li>  <li>    <a href="#" aria-label="Next" class="page-link" data-page="2">      <span aria-hidden="true">»</span>    </a>  </li></ul></nav></div><div class="modal fade" id="historyModal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal0_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-006ac316-d60d-4061-ba65-204d0766f156" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal1_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-00958a1e-b8ef-4d5e-a9ec-9d2d9ae23570" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal2_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-00bedcf5-2ad9-4f46-94c7-49a91366a519" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal3_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-01cae417-5f94-4329-9809-68aae7014f8b" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="historyModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal4_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-025b8bde-e7f6-42ec-ac34-30560cbfa7c7" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="historyModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal5_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-02633611-1ec6-4e82-800b-97939f59a7bd" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="historyModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal6_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-036eb41b-2a58-483d-ad4f-32302a112f0b" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="historyModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal7_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-03733728-8eb8-43fd-b71f-29e26e1948f3" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="historyModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal8_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-0609653a-5833-4fe4-b647-13c52bb9eccd" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="historyModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4>File history</h4><div class="row" style="color:#888;">      <div class="col-xs-6 col-sm-3 col-md-3">   Date   </div>      <div class="col-xs-6 col-sm-3 col-md-3">   Status   </div>      <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6">   Message   </div>   </div><div class="history" id="historyModal9_list"><img src="include/small-ajax-loader.gif" id="datafile-history-small-loader-06a42839-d7eb-45ee-a69a-5e76c9c58d16" style="display:none"></div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>outd</dd><dt>Location</dt><dd>/AN-menthol/12/pdata/1</dd><dt>Size</dt><dd>532.0 B</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: 9a0298aea3ea25021db1cdf30023872c<br>SHA1: 68ae3077d4b5c9ba606a795b7e9054b45bd5d24f<br>SHA256: 2036d1365bd00b9637d6dc484b994c2a092dde864e35d84b06c321c3e68978ad<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:12</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:50</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>title</dd><dt>Location</dt><dd>/AN-menthol/13/pdata/1</dd><dt>Size</dt><dd>59.0 B</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: a0682be80e7ba4b133c19067a61997e9<br>SHA1: e078f2f53a25083d27c3a665aafe0d7b4efa8701<br>SHA256: 88cb80f760a200f2a4cde7dfd3f03193fe8eafadc22b011ab8d602897016f4c9<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:19</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:52</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>proc2s</dd><dt>Location</dt><dd>/Menthol/18/pdata/1</dd><dt>Size</dt><dd>2.0 KB</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: fb33c042180adf2f5c5eda80c2d95e1b<br>SHA1: 9eccd5e42cf40be632f94ad51cf42f657cae3c29<br>SHA256: c75e04b86813473420be153f5a041f87330b19a62da8d36322097bc860549b12<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:21</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:52</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>scon2</dd><dt>Location</dt><dd>/AN-menthol/12</dd><dt>Size</dt><dd>622.0 B</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: a74e20ec8e87c2d226ea5b6cdf7d01d5<br>SHA1: 617cf79ab93d2c365495e4f5c4e0bcdca5ec5748<br>SHA256: 34ff0bec2e07afed7145e3cbc774b9ddb5acadff2a69877ce21c36af727815d0<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:12</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:50</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>gpnam3</dd><dt>Location</dt><dd>/AN-menthol/15</dd><dt>Size</dt><dd>1.7 KB</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: e9c09a98a70275970ddeab1867d07197<br>SHA1: fb1e0e293439159b81b3e4eb6f1dc3e652e4470a<br>SHA256: bbf72e8c1de6ded495cfa4ffaf265c77895a2592577593c91012c72c1df7b1a0<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:15</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:51</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>clevels</dd><dt>Location</dt><dd>/Menthol/18/pdata/1</dd><dt>Size</dt><dd>1.1 KB</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: 21a8dc66956f46951bb4c4d8cb99ef5c<br>SHA1: fd90b4b0bc1b7ae41d3303d847debb8cc49c2b69<br>SHA256: 5774d3d65dc55ade7d361d6f8b6c1b4e233561921f247f61db39459f227ae110<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:21</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:52</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>precom.output</dd><dt>Location</dt><dd>/AN-menthol/15</dd><dt>Size</dt><dd>3.9 KB</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: 19d5ab8887143b56f339edd446d63ca7<br>SHA1: 82a698d691881313b9a1c09833d77b9392873d28<br>SHA256: 2a0db2452d0f714b2aef807a122fea39b2c6dca3840f583880bf737cd26cf739<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:16</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:51</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>peakrng</dd><dt>Location</dt><dd>/AN-menthol/11/pdata/1</dd><dt>Size</dt><dd>174.0 B</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: 15683748d8f74384ca8ee48fdd156176<br>SHA1: e290ad1a4b8055345ea0aeebca798603303642a1<br>SHA256: fbcc7cd2797728a7cee888d0884771e717f1d6f53b9bdb82a3615e2dadc2e140<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:17</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:51</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>format.temp</dd><dt>Location</dt><dd>/AN-menthol/18</dd><dt>Size</dt><dd>7.5 KB</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: 005aa8668678bd18e77dd14ab217aae6<br>SHA1: b379fc973ff3bc41c12d9808223cf7e8dd35c2f6<br>SHA256: f6570407fa3c7ac384cdaf648549a86b62f4949e86aa6efa7d2b71c39080f644<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:07</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:49</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div><div class="modal fade" id="fileInfosModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  <div class="modal-dialog modal-lg" role="document">    <div class="modal-content">      <div class="modal-body">      <h4 style="padding:3px;background-color:#efefef;">File infos</h4>      <dl class="dl-horizontal"><dt>Filename</dt><dd>gpnam1</dd><dt>Location</dt><dd>/AN-menthol/14</dd><dt>Size</dt><dd>1.7 KB</dd><dt>Data category</dt><dd>Primary</dd><dt>Data type</dt><dd>Experimental</dd><dt>MimeType</dt><dd>text/plain</dd><dt>Format</dt><dd>Plain text</dd><dt>Puid</dt><dd>-</dd>      <dt>Checksums</dt>      <dd>MD5: e9c09a98a70275970ddeab1867d07197<br>SHA1: fb1e0e293439159b81b3e4eb6f1dc3e652e4470a<br>SHA256: bbf72e8c1de6ded495cfa4ffaf265c77895a2592577593c91012c72c1df7b1a0<br>      </dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Compliance level</h4>      <dl class="dl-horizontal"><dt>Level</dt><dd><div title="average compliance"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div> average compliance</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Analytical tool</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>File Information Tool Set</dd><dt>Tool name</dt><dd>FITS</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>1.4.0</dd>      </dl>      <h4 style="padding:3px;background-color:#efefef;">Antivirus</h4>      <dl class="dl-horizontal"><dt>Description</dt><dd>ClamAV® is an open source antivirus engine</dd><dt>Tool name</dt><dd>ClamAV</dd><dt>Tool puid</dt><dd>-</dd><dt>Version</dt><dd>0.100.2</dd><dt>Checkdate</dt><dd>15.03.2019, 20:11</dd><dt>Details</dt><dd>stream: OK</dd>      </dl>       <hr>      <dl class="dl-horizontal">        <dt>Last update</dt>        <dd>15.03.2019, 19:50</dd>      </dl>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      </div>    </div>  </div></div></div></div></div><div style="margin-top:30px;"></div><div class="history"><em>created on 15.03.2019 at 19:49:27 by dlcmt3</em> <a class="glyphicon glyphicon-calendar" href="#" data-toggle="modal" data-target="#depositHistoryModal" alt="history" title="history"></a></div><div class="modal fade" id="depositHistoryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">    <div class="modal-dialog modal-lg" role="document">        <div class="modal-content">            <div class="modal-body">                <h4>Deposit history</h4>                <div class="row" style="color:#888;">                    <div class="col-xs-6 col-sm-3 col-md-2">Date</div>                    <div class="col-xs-6 col-sm-3 col-md-2">Status</div>                    <div class="col-xs-3 col-sm-2 col-md-2">   Creator   </div>                    <div class="col-xs-8 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-6">Message</div>                </div>                <div class="history"><div class="row"><div class="col-xs-6 col-sm-3 col-md-2">2019-03-15 19:49</div><div class="col-xs-6 col-sm-3 col-md-2">IN_PROGRESS</div><div class="col-xs-3 col-sm-2 col-md-2">dlcmt3</div><div class="col-xs-8 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-6">In-Progress</div></div><div class="row"><div class="col-xs-6 col-sm-3 col-md-2">2019-03-15 19:49</div><div class="col-xs-6 col-sm-3 col-md-2">CREATED</div><div class="col-xs-3 col-sm-2 col-md-2">dlcmt3</div><div class="col-xs-8 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-6">Creation</div></div>                </div>            </div>            <div class="modal-footer">                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>            </div>        </div>    </div></div>
+<script type="text/javascript">
+
+var js_tree_built = false;
+
+$(document).ready(function(){
+
+    show_flat_view();
+
+    $("#flat-view-link").click(function(e){
+        e.preventDefault();
+        show_flat_view();
+    });
+
+    $("#folders-view-link").click(function(e){
+        e.preventDefault();
+        show_folders_view();
+    });
+});
+
+function show_flat_view()
+{
+    $("#folders-view-link").show();
+    $("#flat-view-link").hide();
+
+    $("#folders_column").hide();
+    $("#files_column").removeClass().addClass("col-md-12").show();
+
+    start_datalist(null);
+}
+
+function show_folders_view()
+{
+    if (!js_tree_built) {
+        build_js_tree();
+        js_tree_built = true;
+    }
+
+    $("#folders-view-link").hide();
+    $("#flat-view-link").show();
+
+    $('#data_structure').jstree('deselect_all').jstree('select_node', "/");
+
+    var folders = getFolders();
+    manageColumnWidths(folders);
+
+    $("#folders_column").show();
+    $("#files_column").show();
+}
+
+/*
+ * Build the JS tree and load the file list with the root node selected
+ */
+function build_js_tree()
+{
+    var folders = getFolders();
+
+    manageColumnWidths(folders);
+
+    $('#data_structure').jstree({
+        "core" : {
+            "animation" : 75,
+            "data" : folders
+        }
+    }).on('select_node.jstree', function (e, data) {
+        start_datalist(data.node.id);
+    }).on('loaded.jstree', function (e, data) {
+
+        // select root node after loading is complete to load the datalist
+        $('#data_structure').jstree(true).select_node("/");
+    });
+}
+
+function getFolders()
+{
+    var folders;
+
+    $.ajax({
+        url : "/demo/deposit-data/get-folders-list/42c29eb8-1911-4ff5-b7ab-404b6220ea38",
+        async : false
+    })
+    .done(function(data){
+        folders = data;
+    })
+    .fail(function(){
+        alert("an error occured");
+    });
+
+    return folders;
+}
+
+var letters_count = 0;
+var max_letters_count = 0;
+
+function manageColumnWidths(rootFolder)
+{
+    max_letters_count = rootFolder.text.length;
+
+    if (typeof(rootFolder.children) != "undefined" && rootFolder.children != null) {
+        $.each(rootFolder.children, function(i, folder){
+
+            letters_count = rootFolder.text.length;
+
+            addChildLettersCount(folder);
+        });
+    }
+
+    var folders_col_class = "col-md-1";
+    var files_col_class   = "col-md-11";
+
+    if (max_letters_count > 5) {
+        folders_col_class = "col-md-2";
+        files_col_class   = "col-md-10";
+    }
+
+    if (max_letters_count > 15) {
+        folders_col_class = "col-md-3";
+        files_col_class   = "col-md-7";
+    }
+
+    if (max_letters_count > 30) {
+        folders_col_class = "col-md-4";
+        files_col_class   = "col-md-6";
+    }
+
+    $("#folders_column").removeClass().addClass(folders_col_class);
+    $("#files_column").removeClass().addClass(files_col_class);
+}
+
+function addChildLettersCount(folder)
+{
+    letters_count += folder.text.length;
+
+    if (letters_count > max_letters_count) {
+    	max_letters_count = letters_count;
+    }
+
+    if (typeof(folder.children) != "undefined" && folder.children != null) {
+        $.each(folder.children, function(i, subfolder){
+            addChildLettersCount(subfolder, letters_count);
+        });
+    }
+}
+
+
+function start_datalist(relative_location)
+{
+    var params = {
+            load_data_list_url        : "/demo/deposit-data/datalist",
+            delete_datafile_url       : "/demo/deposit-data/delete",
+            resume_datafile_url       : "/demo/deposit-data/resume",
+            load_datafile_history_url : "/demo/deposit-data/history",
+            download_datafile_url     : "/demo/deposit-data/download",
+            relative_location         : relative_location
+
+                    };
+
+    Datalist.start("42c29eb8-1911-4ff5-b7ab-404b6220ea38", params);
+}
+</script>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <footer id="footer">
+
+                    <div class="row">
+
+                        <div class="col-md-12 text-right"></div>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body></html>

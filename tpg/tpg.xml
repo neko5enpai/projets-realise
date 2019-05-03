@@ -1,0 +1,35 @@
+<stops>
+    <timestamp>YYYY-MM-DDThh:mm:ssTZD</timestamp>
+
+<stops>
+    <stop>
+        <stopCode>CVIN</stopCode>
+        <stopName>Gare Cornavin</name>
+    <connections>
+        <connection>
+            <lineCode>1</lineCode>
+            <destinationName>Petit-Bel-Air</destinationName>
+            <destinationCode>PETIT-BEL-AIR</destinationCode>
+        </connection>
+        <connection>
+            <lineCode>1</lineCode>
+            <destinationName>Jar.-Botanique</destinationName>
+            <destinationCode>JAR. BOTANIQUE</destinationCode>
+        </connection>
+     …
+    </connections>
+
+     ...
+    <distance>103</distance>
+    </stop>
+    <stop>
+     …
+    </stop>
+ …
+ </stops>
+
+ ...
+</stops> 
+<stops>
+    <timestamp>YYYY-MM-DDThh:mm:ssTZD</timestamp>
+</stops> 

@@ -1,0 +1,21 @@
+<!-- https://js.do/code/258339 -->
+<code>
+	<script>
+    var impair = "<span style='color:blue'>*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*</span>&nbsp;&nbsp;<span style='color:red'>====================================</span>";
+    var pair = "<span style='color:blue'>&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;<span style='color:red'>====================================</span>";
+    var egal = "<span style='color:red'>======================================================</span>";
+    
+    for (var line=1; line<15; line++) {
+    	if(line<=9) {
+        if(line%2===0){
+        	document.write(pair);
+        }else{
+        	document.write(impair);
+        }
+        }else{
+        	document.write(egal);
+    }
+    document.writeln("<br>");
+    }
+    </script>
+</code>

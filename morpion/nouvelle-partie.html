@@ -1,0 +1,77 @@
+<!-- 
+    __  ___                 _           
+   /  |/  /___  _________  (_)___  ____ 
+  / /|_/ / __ \/ ___/ __ \/ / __ \/ __ \
+ / /  / / /_/ / /  / /_/ / / /_/ / / / /
+/_/  /_/\____/_/  / .___/_/\____/_/ /_/ 
+                 /_/                    
+
+Project by Mohamad & Virginie
+November 2018
+Version : 1.0
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
+<title>MORPION - NOUVELLE PARTIE</title>
+</head>
+
+<body>
+    <div id="wrapper"> <!-- WRAPPER -->
+        <div>
+            <h1 class="game-title" id="game-title">Nom de la partie</h1>
+            <h2 id ="tour">Tour des joueurs</h2>     
+        </div>       
+        <div id="game-content"> <!-- Grille du jeu + Nom des joueurs -->
+            <div id="tic-tac-toe"><!-- Grille Morpion -->
+                <table>
+                    <tr id = "row-1">
+                        <td onclick="play(this,1)">&nbsp;</td>
+                        <td onclick="play(this,2)">&nbsp;</td>
+                        <td onclick="play(this,4)">&nbsp;</td>
+                    </tr>
+                    <tr id = "row-2">
+                        <td onclick="play(this,8)">&nbsp;</td>
+                        <td onclick="play(this,16)">&nbsp;</td>
+                        <td onclick="play(this,32)">&nbsp;</td>
+                    </tr>
+                    <tr id = "row-3">
+                        <td onclick="play(this,64)">&nbsp;</td>
+                        <td onclick="play(this,128)">&nbsp;</td>
+                        <td onclick="play(this,256)">&nbsp;</td>
+                    </tr>
+                </table> 
+            </div>
+            <div id="player-names"><!-- Joueurs -->
+                <p><span class="style-joueurs" id="joueur1">Joueur 1</span></p>
+                <p><span class="style-joueurs" id="joueur2">Joueur 2</span></p>
+            </div>
+        </div>
+    </div> <!-- WRAPPER END -->
+<div id="copyright">
+    <p>© Developped and Designed by Mohamad & Virginie</p>
+</div>
+
+<script type="text/javascript">
+window.onload = function(){
+
+    var npartie = localStorage.getItem("npartie");
+    var j1 = localStorage.getItem("player-entry1");
+    var j2 = localStorage.getItem("player-entry2");
+
+
+    document.getElementById("game-title").innerHTML = npartie;
+    document.getElementById("joueur1").innerHTML = j1;
+    document.getElementById("joueur2").innerHTML = j2;
+    
+}
+</script>
+<script type="text/javascript" src = "morpion.js">			
+		</script>
+</body>
+
+</html> 

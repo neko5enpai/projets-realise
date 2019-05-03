@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DLCM client:
+        Deposits    </title>
+    <link href="https://ui.dlcm.ch/demo/favicon.ico" type="image/x-icon" rel="icon"><link href="https://ui.dlcm.ch/demo/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="include/bootstrap.css"><link rel="stylesheet" href="include/alaxos.css"><link rel="stylesheet" href="include/dlcm.css"><script src="include/jquery-1.js"></script><script src="include/bootstrap.js"></script>
+            </head>
+<body cz-shortcut-listen="true">
+    <div id="container" class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                            <div id="top_unige_logo"><img src="include/dlcm-logo.svg" alt=""></div>                        </div>
+                        <div class="col-md-5 col-sm-4 col-xs-12">
+                            <h1 id="application_title"><a href="https://ui.dlcm.ch/demo/">Data Life Cycle Management</a></h1>                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row"><div class="col-sm-12 text-right small">demo</div></div><div class="text-right hidden-xs" style="overflow:hidden;"></div><div class="hidden-sm hidden-md hidden-lg" style="overflow:hidden;"></div>                            <div class="text-right">
+                            <a href="https://ui.dlcm.ch/demo/users/set-lang?lang=fr">fr</a> <a href="https://ui.dlcm.ch/demo/users/set-lang?lang=de">de</a> <a href="https://ui.dlcm.ch/demo/users/set-lang?lang=en">en</a>                             </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="row"><div class="col-md-12">
+<nav class="navbar navbar-default navbar-flat" role="navigation">
+  <div class="container-fluid">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_links_1552681332">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>
+    <div class="collapse navbar-collapse" id="navbar_links_1552681332">
+
+      <ul class="nav navbar-nav">
+
+        <li class="active">
+          <a href="https://ui.dlcm.ch/demo/deposits" id="deposits">Deposits</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/sip" id="sip">SIP</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/aip" id="aip">AIP</a>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Access<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/search/search" id="search">Search</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/orders/cart" id="cart">Cart</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/orders/user-history" id="ordersUserHistory">Your orders history</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/orders" id="orders">Orders</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/aip-downloads" id="aip_downloads">Downloaded AIPs</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/dip" id="dip">DIP</a>
+        </li>
+             </ul>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/organizational-units" id="organizational_units">Organizational units</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/people" id="people">People</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/backend-users" id="backend-users">Users</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/roles" id="roles">Roles</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/institutions" id="institutions">Institutions</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/funding-agencies" id="funding_agencies">Funding agencies</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/submission-agreements" id="submission_agreements">Submission agreements</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/oauth2-clients" id="oauth2_clients">OAuth2 clients</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/basic-auth-clients-ingestion" id="basic_auth_clients">BasicAuth clients</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/oai-sets" id="oai_sets">OAI sets</a>
+        </li>
+             </ul>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preservation planning<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/planning/monitor/list-modules" id="monitoring">Monitoring</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/planning/preservation-jobs" id="preservation_jobs">Jobs</a>
+        </li>
+             </ul>
+        </li>
+        <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles<span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/users" id="admin_users">Users</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/roles" id="admin_roles">Roles</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/log-entries" id="admin_logs">Logs</a>
+        </li>
+             </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/admin/users/configure-connection" id="connection"><span class="glyphicon glyphicon-cloud-upload"></span> Connection</a>
+        </li>
+
+        <li>
+          <a href="https://ui.dlcm.ch/demo/logout" id="logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav></div></div>
+        <div id="content" class="row">
+            <div class="col-md-12">
+
+                                
+                <div class="row" style="margin-bottom:10px;"><div class="col-md-4 col-md-offset-8">Filter by organizational unit : <div class="input select"><select name="organizationalUnitFilter" id="organizationalUnitFilter" class="form-control"><option value="05f20373-a72d-4160-9ef7-0f78307e1ef0">Bodmer Lab</option><option value="0e16e28b-a30c-4771-9205-992bc9a77d78">Dotphoton</option><option value="a0542038-7e6e-429e-87bc-ff4defe38103">DLCM</option><option value="e5f4e0c3-7a3e-4089-9a59-f9bb437a614f" selected="selected">NMR Chemistry Lab</option><option value="f077bf9d-d62b-42b7-8c6b-048828a8e78b">Optics &amp; Crystal Growth Lab</option><option value="fd287375-4833-4666-9a4f-3d739c35de08">Predictive Ecology Lab</option></select></div></div></div>
+<script type="text/javascript">
+$(document).ready(function() {
+    registerOrganizationalUnitFilterChange();
+});
+
+function registerOrganizationalUnitFilterChange() {
+    $("#organizationalUnitFilter").change(function(){
+        window.location = "/demo/deposits?tab=&status=IN_PROGRESS&unitFilter=" + $(this).val();
+    });
+}
+
+</script>
+
+<ul class="nav nav-tabs"><li role="presentation" class="active"><a href="https://ui.dlcm.ch/demo/deposits?status=IN_PROGRESS"><span id="total-ongoing-deposits" class="badge badge-outline">3</span> Ongoing deposits</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=IN_VALIDATION"><span id="total-awaiting-deposits" style="color: rgb(204, 204, 204);"></span> Deposits awaiting validation</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=APPROVED"><span id="total-approved-deposits" style="color: rgb(204, 204, 204);"></span> Approved deposits</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=COMPLETED"><span id="total-completed-deposits" style="color: rgb(204, 204, 204);"></span> Completed deposits</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=REJECTED"><span id="total-rejected-deposits" style="color: rgb(204, 204, 204);"></span> Rejected deposits</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits?status=IN_ERROR"><span id="total-error-deposits" style="color: rgb(204, 204, 204);"></span> Deposits in error</a></li></ul><div style="height:20px;"></div>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    setTotalDeposits("IN_PROGRESS");
+    setTotalDeposits("IN_VALIDATION");
+    setTotalDeposits("APPROVED");
+    setTotalDeposits("COMPLETED");
+    setTotalDeposits("REJECTED");
+    setTotalDeposits("IN_ERROR");
+
+    registerOrganizationalUnitFilterChange();
+});
+
+function setTotalDeposits(status)
+{
+    var total_zone = null;
+
+    switch (status) {
+        case "IN_PROGRESS":
+            total_zone = "#total-ongoing-deposits";
+            break;
+
+        case "IN_VALIDATION":
+            total_zone = "#total-awaiting-deposits";
+            break;
+
+        case "APPROVED":
+            total_zone = "#total-approved-deposits";
+            break;
+
+        case "COMPLETED":
+            total_zone = "#total-completed-deposits";
+            break;
+
+        case "REJECTED":
+            total_zone = "#total-rejected-deposits";
+            break;
+
+        case "IN_ERROR":
+            total_zone = "#total-error-deposits";
+            break;
+    }
+
+    var url = "https://ui.dlcm.ch/demo/deposits/get-total-deposits/status.json".replace("status", status);
+
+    var organizationalUnitFilterValue = $("#organizationalUnitFilter").val();
+    if (organizationalUnitFilterValue != null && organizationalUnitFilterValue != "") {
+        url += "?unitFilter=" + organizationalUnitFilterValue;
+    }
+
+    $.getJSON(url, function( data ) {
+        if (data.total > 0) {
+            $(total_zone).addClass("badge");
+            $(total_zone).addClass("badge-outline");
+            $(total_zone).html(data.total);
+        } else {
+            $(total_zone).css("color", "#ccc");
+            $(total_zone).html("");
+        }
+    });
+}
+
+</script>
+<div class="row"><div class="col-sm-6"><div class="btn-toolbar"><div class="btn-group btn-group-sm"><a href="https://ui.dlcm.ch/demo/deposits/edit/42c29eb8-1911-4ff5-b7ab-404b6220ea38" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Edit</a></div><div class="btn-group btn-group-sm"><form name="post_5c8c0974b531a834469453" style="display:none;" method="post" action="/demo/deposits/update-status/42c29eb8-1911-4ff5-b7ab-404b6220ea38?deposit_status=IN_VALIDATION"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="1d2a5e46a8c01dc6366ea2b72e8e56c5446d19af%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" class="btn btn-default" onclick='if (confirm("Do you really want to send this deposit to validation ?")) { document.post_5c8c0974b531a834469453.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-check"></span> Send to validation</a></div></div></div><div class="col-sm-6 text-right"><div class="btn-group btn-group-sm"><form name="post_5c8c0974b54c6927573169" style="display:none;" method="post" action="/demo/deposits/reserve-doi/42c29eb8-1911-4ff5-b7ab-404b6220ea38?deposit_status=IN_VALIDATION"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="ff5f119acb10f9ffa4940c253a4b87a1f5f808c0f09dcf91dd2bee1dfc84ba9df48e40bc090b0c44139ee5827b1ad20b18e8e65b0947b278509d40cf9b74839f"><div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="ac0cc7f0fc94d00bf0aee354a2be28876e87fd62%3A"><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""></div></form><a href="#" class="btn btn-default" onclick='if (confirm("Do you really want to reserve a DOI for this deposit ?")) { document.post_5c8c0974b54c6927573169.submit(); } event.returnValue = false; return false;'><span class="glyphicon glyphicon-barcode"></span> Reserve a DOI</a></div></div></div><div style="height:20px;"></div><h3>[Organic Compound] Menthol</h3><ul class="nav nav-tabs" style="margin:20px 0px;"><li role="presentation" class="active"><a href="https://ui.dlcm.ch/demo/deposits/view/42c29eb8-1911-4ff5-b7ab-404b6220ea38">Metadata</a></li><li role="presentation" class=""><a href="https://ui.dlcm.ch/demo/deposits/files/42c29eb8-1911-4ff5-b7ab-404b6220ea38"><span class="badge badge-outline" id="data_total_badge">332</span> Files</a></li></ul><div style="height:20px;"></div><dl class="dl-horizontal"><dt>Organizational unit</dt><dd>NMR Chemistry Lab</dd><dt>ResId</dt><dd>42c29eb8-1911-4ff5-b7ab-404b6220ea38</dd><dt>DOI</dt><dd></dd><dt>Title</dt><dd>[Organic Compound] Menthol</dd><dt>Description</dt><dd><p>Data set created by DLCM Tools: [Organic Compound] Menthol</p>
+</dd><dt>Language</dt><dd></dd><dt>Publication date</dt><dd>2019-03-15</dd><dt style="margin-bottom:10px;">Collection begin</dt><dd></dd><dt style="margin-bottom:10px;">Collection end</dt><dd></dd><dt>Status</dt><dd>IN_PROGRESS</dd><dt>Authors</dt><dd><ul></ul></dd><dt>Access</dt><dd>PUBLIC</dd><dt>License</dt><dd>Creative Commons Attribution 4.0</dd><dt>Data compliance level</dt><dd><span class="glyphicon glyphicon-star" title="average compliance"></span><span class="glyphicon glyphicon-star" title="average compliance"></span><span class="glyphicon glyphicon-star-empty" title="average compliance"></span></dd></dl><div class="history"><em>created on 15.03.2019 at 19:49:27 by dlcmt3</em> <a class="glyphicon glyphicon-calendar" href="#" data-toggle="modal" data-target="#depositHistoryModal" alt="history" title="history"></a></div><div class="modal fade" id="depositHistoryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">    <div class="modal-dialog modal-lg" role="document">        <div class="modal-content">            <div class="modal-body">                <h4>Deposit history</h4>                <div class="row" style="color:#888;">                    <div class="col-xs-6 col-sm-3 col-md-2">Date</div>                    <div class="col-xs-6 col-sm-3 col-md-2">Status</div>                    <div class="col-xs-3 col-sm-2 col-md-2">   Creator   </div>                    <div class="col-xs-8 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-6">Message</div>                </div>                <div class="history"><div class="row"><div class="col-xs-6 col-sm-3 col-md-2">2019-03-15 19:49</div><div class="col-xs-6 col-sm-3 col-md-2">IN_PROGRESS</div><div class="col-xs-3 col-sm-2 col-md-2">dlcmt3</div><div class="col-xs-8 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-6">In-Progress</div></div><div class="row"><div class="col-xs-6 col-sm-3 col-md-2">2019-03-15 19:49</div><div class="col-xs-6 col-sm-3 col-md-2">CREATED</div><div class="col-xs-3 col-sm-2 col-md-2">dlcmt3</div><div class="col-xs-8 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-6">Creation</div></div>                </div>            </div>            <div class="modal-footer">                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>            </div>        </div>    </div></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <footer id="footer">
+
+                    <div class="row">
+
+                        <div class="col-md-12 text-right"></div>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body></html>

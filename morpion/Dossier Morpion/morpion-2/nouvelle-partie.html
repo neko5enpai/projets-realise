@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
+
+<title>MORPION - NOUVELLE PARTIE</title>
+
+</head>
+
+<body>
+
+<div id="wrapper"> <!-- WRAPPER -->
+
+    <div>
+
+        <h1 class="game-title">Nom de la partie</h1> 
+        <h3 class="joueur-tour">joueur-tour</h3> 
+    </div>
+
+    <div id="game-content"> <!-- Grille du jeu + Nom des joueurs -->
+
+        <div id="tic-tac-toe"><!-- Grille Morpion -->
+
+            <table>
+
+                <tr id = "row-1">
+
+                    <td onclick="play(this)"></td>
+
+                    <td onclick="play(this)"></td>
+
+                    <td onclick="play(this)"></td>
+
+                </tr>
+
+                <tr id = "row-2">
+
+                    <td onclick="play(this)"></td>
+
+                    <td onclick="play(this)"></td>
+
+                    <td onclick="play(this)"></td>
+
+                </tr>
+
+                <tr id = "row-3">
+
+                    <td onclick="play(this)"></td>
+
+                    <td onclick="play(this)"></td>
+
+                    <td onclick="play(this)"></td>
+
+                </tr>
+
+            </table> 
+
+        </div>
+
+        <div id="player-names"><!-- Joueurs -->
+
+            <p><span class="style-joueurs">Joueur 1</span></p><p>[Pseudo j1]</p>
+
+            <p><span class="style-joueurs">Joueur 2</span></p><p>[Pseudo j2]</p>
+
+        </div>
+
+    </div>
+
+</div> <!-- WRAPPER END -->
+
+
+<script type="text/javascript" src = "morpion.js">
+			
+		</script>
+</body>
+
+</html> 

@@ -1,0 +1,14 @@
+2019-04-03T09:30:09+00:00 DEBUG 
+====Stripe Version: 4.1.15====
+====Start Log====
+Error: Impossible de créer un dossier d’association de domaine vers la racine du domaine.
+====End Log====
+
+
+2019-04-03T09:34:56+00:00 DEBUG 
+====Stripe Version: 4.1.15====
+====Start Log====
+Error: Impossible de créer un dossier d’association de domaine vers la racine du domaine.
+====End Log====
+
+
